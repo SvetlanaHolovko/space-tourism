@@ -644,3 +644,53 @@ foreignObject {
     background-repeat: no-repeat;
     padding: 100px 0 150px;
 }
+
+.footer__inner {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer__text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    width: 165px;
+    margin-right: 50px;
+}
+
+.footer__text p + p {
+    margin-top: 50px;
+}
+
+.footer__menu {
+    list-style: none;
+    width: 120px;
+    margin-right: 95px;
+}
+
+.footer__links {
+    list-style: none;
+    width: 165px;
+}
+
+.footer__menu-item,
+.footer__links-item {
+    font-family: 'sf-pro-display', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 20px;
+}
+
+.footer__menu-link,
+.footer__links-link {
+    transition: color 0.3s linear;
+    text-transform: uppercase;
+}
+
+.footer__menu-link:hover,
+.footer__links-link:hover {
+    color: #CB0E0E;
+}
