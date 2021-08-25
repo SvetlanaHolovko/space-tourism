@@ -1,0 +1,43 @@
+@media (max-width: 1024px) {
+    .header__login  {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 895px) {
+    .header__top {
+        padding-top: 30px;
+    }
+    .menu-btn {
+        display: block;
+    }
+    .menu__list {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #010203;
+        padding-top: 90px;
+        padding-bottom: 30px;
+        width: 100%;
+        text-align: center;
+        transform: translateY(-150%);
+        transition: all 0.5s linear;
+    }
+    .menu__list.active {
+        transform: translateY(0);
+    }
+    .menu__item {
+        padding: 15px 0;
+        margin-right: 0;
+    }
+    .menu__link {
+        display: block;
+    }
+    .header__phone,
+    .header__login {
+        position: relative;
+        z-index: 20;
+    }
+}

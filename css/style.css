@@ -44,7 +44,6 @@ button {
     color: inherit;
 }
 
-
 body {
     font-family: 'sf-pro-display', sans-serif;
     font-weight: 400;
@@ -101,6 +100,42 @@ button:hover {
     padding: 75px 0 30px;
 }
 
+.menu-btn {
+    display: none;
+    width: 40px;
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+    z-index: 20;
+}
+
+.menu-btn span {
+    position: relative;
+    display: block;
+    height: 2px;
+    background-color: #fff;
+}
+
+.menu-btn span::before,
+.menu-btn span::after {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 2px;
+    background-color: #fff;
+    left: 0;
+}
+
+.menu-btn span::before {
+    top: -10px;
+}
+
+.menu-btn span::after {
+    top: 10px;
+}
+
+
+
 .menu__list {
     display: flex;
 }
@@ -142,6 +177,7 @@ button:hover {
 .header__content {
     max-width: 600px;
     margin-bottom: 40px;
+    padding-top: 150px;
 }
 
 .heder__title {
