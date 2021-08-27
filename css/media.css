@@ -1,3 +1,24 @@
+@media (max-width: 1160px) {
+    .about {
+        text-align: center;
+    }
+    .about__item {
+        display: block;
+    }
+    .about__content {
+        width: 100%;
+    }
+    .about__content-text {
+        display: block;
+    }
+    .about__content-text p {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .about__table {
+        width: 100%;
+    }
+}
 @media (max-width: 1024px) {
     .header__login  {
         margin-right: 0;
@@ -49,6 +70,61 @@
     .header__description {
         justify-content: center;
     }
+
+    .about {
+        padding: 50px 0;
+    }
+    .title {
+        margin-bottom: 50px;
+    }
+    .about__item {
+        margin-bottom: 50px;
+    }
+
+    .how-to {
+        padding: 50px 0;
+    }
+    .how-to__box svg {
+        display: none;
+    }
+    .how-to__box-list {
+        display: block;
+        list-style: none;
+    }
+    .how-to__box-item {
+        padding-bottom: 30px;
+        text-align: left;
+        padding-left: 20px;
+        margin-left: 20px;
+        position: relative;
+        border-left: 1px solid #fff;
+        cursor: pointer;
+        transition: all 0.5s linear;
+    }
+    .how-to__box-item::before {
+        position: absolute;
+        content: "";
+        left: -10px;
+        top: 0;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #fff;
+        transition: all 0.5s linear;
+    }
+    .how-to__box-item:last-child {
+        border-left: none;
+    }
+    .how-to__box-item:hover {
+        color: #036CCA;
+        font-size: 22px;
+        line-height: 22px;
+    }
+    .how-to__box-item:hover::before {
+        background-color: #036CCA;
+        width: 25px;
+        height: 25px;
+    }
 }
 
 @media (max-width: 620px) {
@@ -85,6 +161,48 @@
         margin-left: 0;
         margin-top: 20px;
     }
+    .title {
+        font-size: 38px;
+        line-height: 38px;
+    }
+    .about__content-text {
+        margin-bottom: 30px;
+    }
+    .about__content-text p {
+        margin-bottom: 20px;
+    }
+    .about__table {
+        margin-bottom: 30px;
+    }
+    .about__table-tr:first-child {
+        display: none;
+    }
+    .about__table-tr + .about__table-tr {
+        font-size: 20px;
+        line-height: 22px;
+        font-weight: 400;
+    }
+    .about__table-td {
+        display: block;
+        text-align: right;
+    }
+    .about__table-td:not(:last-child) {
+        border-bottom: 1px solid #fff;
+    }
+    .about__table-td span {
+        display: inline-block;
+    }
+    .about__table-td::before {
+        content: attr(arial-label);
+        float: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 32px;
+        line-height: 32px;
+    }
 }
 
 @media (max-width: 360px) {
@@ -108,5 +226,8 @@
     .header__btn {
         font-size: 16px;
         width: 100%;
+    }
+    .about__content {
+        display: block;
     }
 }

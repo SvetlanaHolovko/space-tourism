@@ -255,6 +255,7 @@ button:hover {
 
 .about__img {
     max-width: 100%;
+    margin-bottom: 20px;
 }
 
 .about__content {
@@ -380,6 +381,10 @@ button:hover {
 
 foreignObject {
     text-align: left;
+}
+
+.how-to__box-list {
+    display: none;
 }
 
 /* To-book */
@@ -683,6 +688,7 @@ foreignObject {
 .footer__inner {
     display: flex;
     justify-content: flex-end;
+    flex-wrap: wrap;
 }
 
 .footer__text {
