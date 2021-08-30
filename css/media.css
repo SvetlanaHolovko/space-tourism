@@ -329,6 +329,7 @@
     }
     .special-offer__item-box {
         padding: 20px 10px;
+        min-height: 300px;
     }
     .special-offer__new-price {
         font-size: 34px;
